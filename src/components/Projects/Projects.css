@@ -1,0 +1,23 @@
+
+/* Projects components */
+
+.projects {
+  margin-top: 0;
+  padding-top: 2%;
+  padding-bottom: 5%;
+  font: 18px/24px "opensans-bold",sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff;
+  text-align: center;
+  background: #efe1bd;
+}
+.projects h1{
+   margin-bottom: 80px;
+}
+.projects-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}

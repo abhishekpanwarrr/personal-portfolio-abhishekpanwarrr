@@ -1,0 +1,32 @@
+
+ /* footer */
+ .footer{
+  background: #1f1f1f;
+  min-height: 100px;
+  width: 100%;
+  overflow: hidden;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #707070;
+ }
+ .footer-links-container{
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+ }
+ .footer-links{
+  color: #fff;
+  text-align: center;
+ }
+ 
+ .footer-copyright{
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  color: #fff;
+  margin-top: 20px;
+ }

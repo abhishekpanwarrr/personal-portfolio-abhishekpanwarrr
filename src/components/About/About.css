@@ -1,0 +1,120 @@
+
+/* About component */
+.about,.projects,.skills{
+  background-color: #fff;
+  padding:0px 3%;
+}
+.about h1,
+.projects h1,
+.skills h1{
+  padding-top: 5%;
+  font: 18px/24px "opensans-bold",sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #000;
+  text-align: center;
+}
+.about-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.polariod {
+  background: #fff;
+  display: inline-block;
+  margin: 55px 75px 30px;
+  padding: 15px 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgb(0 0 0 / 30%);
+  transition: all .2s linear;
+  z-index: 0;
+  position: relative;
+}
+.polariod-bg{
+  background: #6D6D6D;
+}
+.polariod img{
+  height: 250px;
+}
+.about-info-left{
+  flex: 0.4;
+}
+.about-info-right{
+  flex: 0.6;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card{
+  width: 95%;
+  height: auto;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 0.25rem;
+}
+.card-body-bg{
+  /* border: 2px solid gray; */
+  /* border: 1px solid rgba(0,0,0,.125); */
+
+  background: #6d6d6d;
+}
+.card-header{
+  height: 50px;
+  border-bottom: 1px solid rgba(0,0,0,.125);
+  padding-left: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-header-bg{
+  background: #696969;
+  /* border-bottom: 1px solid #6d6d6d; */
+  border: 1px solid rgba(0,0,0,.125);
+}
+.card-header ul{
+  display: flex;
+  justify-content: space-between;
+  width: 50px;
+  list-style: none;
+}
+.card-header ul li {
+  width: 12px;
+  height: 12px;
+  background-color: #000;
+  border-radius:6px;
+}
+.card-header ul li:first-child{
+  background-color: rgb(237, 76, 92);
+}
+.card-header ul li:nth-child(2){
+  background: rgb(253, 203, 88);
+}
+.card-header ul li:nth-child(3){
+  background: rgb(120, 177, 89);
+}
+.card-body{
+  /* flex: 1 1 auto; */
+  /* min-height: 1px; */
+  padding: 1.25rem;
+}
+.card-body-bg{
+  background: #6d6d6d;
+}
+.card-body p{
+  font-family: "Trebuchet MS","Lucida Sans Unicode","Lucida Grande","Lucida Sans",Arial,sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: justify!important;
+  margin-left: 1rem!important;
+}
+.card-body p span{
+  font-family: "Trebuchet MS","Lucida Sans Unicode","Lucida Grande","Lucida Sans",Arial,sans-serif;
+  font-size: 26px;
+}
+
+.theme-bg{
+  background: gray;
+  color: #fff !important;
+}

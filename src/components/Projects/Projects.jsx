@@ -1,10 +1,11 @@
 import React from "react";
-import Project from "./Project";
-import personal from "../assets/react.png";
-import netflix from "../assets/netflix.png";
-import task from "../assets/task.png";
+import Project from "../Project/Project";
+import personal from "../../assets/react.png";
+import netflix from "../../assets/netflix.png";
+import task from "../../assets/task.png";
 // import ecommerce from "../assets/ecommerce.png";
-import filterMovie from "../assets/movie-filter-apps.netlify.app_.png";
+import filterMovie from "../../assets/movie-filter-apps.netlify.app_.png";
+import "./Projects.css";
 const Projects = ({ theme }) => {
   const data = [
     {

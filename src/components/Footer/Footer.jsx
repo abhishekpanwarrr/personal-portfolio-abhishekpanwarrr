@@ -1,5 +1,7 @@
 import React from "react";
 import { BsInstagram, BsGithub, BsTelephone } from "react-icons/bs";
+import { BsLinkedin } from "react-icons/bs";
+import "./Footer.css";
 const Footer = () => {
   return (
     <div className="footer">
@@ -21,6 +23,14 @@ const Footer = () => {
           </a>
           <a href="tel:+919991237576" target="_blank" rel="noreferrer">
             <BsTelephone size="22px" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/abhishekpanwarrr/"
+            target="_blank"
+            rel="noreferrer"
+            style={{ marginLeft: "30px" }}
+          >
+            <BsLinkedin size="22px" />
           </a>
         </div>
       </div>

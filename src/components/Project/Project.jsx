@@ -1,5 +1,5 @@
 import React from "react";
-import "./project.css";
+import "./Project.css";
 const Project = ({ image, title, theme, link }) => {
   return (
     <a href={link} target="_blank" rel="noreferrer">
