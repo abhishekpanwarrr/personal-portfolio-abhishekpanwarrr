@@ -4,7 +4,7 @@ import { BsLinkedin } from "react-icons/bs";
 import "./Footer.css";
 const Footer = () => {
   return (
-    <div className="footer">
+    <div className="footer" id="footer">
       <div className="footer-links-container">
         <div className="footer-links">
           <a

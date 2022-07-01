@@ -12,15 +12,15 @@ const Navbar = ({ theme, setTheme }) => {
       }}
     >
       <div>
-        <Link to="/blog" className="btn">
+        <a href="#footer" className="btn">
           <span className="btn-text">Contact</span>
-        </Link>
+        </a>
         <Link to="/blog" className="btn">
           <span className="btn-text">Blogs</span>
         </Link>
-        <Link to="/blog" className="btn">
+        {/* <Link to="/blog" className="btn">
           <span className="btn-text">Blogs</span>
-        </Link>
+        </Link> */}
       </div>
       {/* <div className="toggle-container"> */}
       <div
