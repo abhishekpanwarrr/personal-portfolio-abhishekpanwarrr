@@ -1,0 +1,34 @@
+.project-container{
+    width: 350px;
+    height: 350px;
+    transition: all 200ms ease-in-out;
+}
+.project-container:hover{
+    transform: scale(1.05);
+}
+.foto{
+    background: #fff;
+    width: 100%;
+    display: inline-block;
+    margin: 0 auto 5%;
+    padding: 10px 10px 5px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgb(0 0 0 / 30%);
+    transition: all .2s linear;
+    z-index: 0;
+    position: relative
+}
+.foto img{
+    height: 230px;
+    width: 100%;
+}
+.foto .project-title{
+    margin-top: 5%;
+    font: 18px/24px "opensans-bold",sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #000;
+    text-align: center;
+    padding-bottom: 10px;
+}
