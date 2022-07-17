@@ -3,7 +3,7 @@ import Project from "../Project/Project";
 import personal from "../../assets/react.png";
 import netflix from "../../assets/netflix.png";
 import task from "../../assets/task.png";
-// import ecommerce from "../assets/ecommerce.png";
+import vragency from "../../assets/vragency.png";
 import filterMovie from "../../assets/movie-filter-apps.netlify.app_.png";
 import "./Projects.css";
 const Projects = ({ theme }) => {
@@ -26,12 +26,12 @@ const Projects = ({ theme }) => {
       title: "Task Manager App",
       link: "https://todos-app-react-firebase.netlify.app/",
     },
-    // {
-    //   id: 4,
-    //   image: ecommerce,
-    //   title: "Ecommerce Website",
-    //   link: "https://ecommerce-abhishek.netlify.app/",
-    // },
+    {
+      id: 4,
+      image: vragency,
+      title: "VR Agency App",
+      link: "https://tailwind-react-website.vercel.app/",
+    },
     {
       id: 5,
       image: filterMovie,

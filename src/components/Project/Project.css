@@ -1,34 +1,45 @@
-.project-container{
-    width: 350px;
-    height: 350px;
-    transition: all 200ms ease-in-out;
+.project-container {
+  width: 320px;
+  height: 350px;
+  transition: all 200ms ease-in-out;
 }
-.project-container:hover{
-    transform: scale(1.05);
+.project-container:hover {
+  transform: scale(1.05);
 }
-.foto{
-    background: #fff;
-    width: 100%;
-    display: inline-block;
-    margin: 0 auto 5%;
-    padding: 10px 10px 5px;
-    text-align: center;
-    text-decoration: none;
-    box-shadow: 0 4px 6px rgb(0 0 0 / 30%);
-    transition: all .2s linear;
-    z-index: 0;
-    position: relative
+.foto {
+  background: #fff;
+  width: 100%;
+  display: inline-block;
+  margin: 0 auto 5%;
+  padding: 10px 10px 5px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgb(0 0 0 / 30%);
+  transition: all 0.2s linear;
+  z-index: 0;
+  position: relative;
 }
-.foto img{
-    height: 230px;
-    width: 100%;
+.project-demo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.foto .project-title{
-    margin-top: 5%;
-    font: 18px/24px "opensans-bold",sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    color: #000;
-    text-align: center;
-    padding-bottom: 10px;
+.project-demo a {
+  font-size: 10px;
+  background: #142536;
+  padding: 6px 14px;
+  border-radius: 2px;
+}
+.foto img {
+  height: 230px;
+  width: 100%;
+}
+.foto .project-title {
+  margin-top: 5%;
+  font: 14px "opensans-bold", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #000;
+  text-align: center;
+  padding-bottom: 10px;
 }

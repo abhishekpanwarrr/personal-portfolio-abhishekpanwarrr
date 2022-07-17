@@ -1,6 +1,6 @@
 import React from "react";
 import { BsMoon, BsSun } from "react-icons/bs";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "./Navbar.css";
 const Navbar = ({ theme, setTheme }) => {
   return (
@@ -15,9 +15,9 @@ const Navbar = ({ theme, setTheme }) => {
         <a href="#footer" className="btn">
           <span className="btn-text">Contact</span>
         </a>
-        <Link to="/blog" className="btn">
+        {/* <Link to="/blog" className="btn">
           <span className="btn-text">Blogs</span>
-        </Link>
+        </Link> */}
         {/* <Link to="/blog" className="btn">
           <span className="btn-text">Blogs</span>
         </Link> */}

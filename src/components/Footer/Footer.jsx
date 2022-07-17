@@ -11,6 +11,7 @@ const Footer = () => {
             href="https://instagram.com/abhishekpanwarrr"
             target="_blank"
             rel="noreferrer"
+            title="Instagram"
           >
             <BsInstagram size="22px" style={{ marginRight: "30px" }} />
           </a>
@@ -18,16 +19,23 @@ const Footer = () => {
             href="https://github.com/abhishekpanwarrr"
             target="_blank"
             rel="noreferrer"
+            title="Github"
           >
             <BsGithub size="22px" style={{ marginRight: "30px" }} />
           </a>
-          <a href="tel:+919991237576" target="_blank" rel="noreferrer">
+          <a
+            href="tel:+919991237576"
+            target="_blank"
+            rel="noreferrer"
+            title="Call now"
+          >
             <BsTelephone size="22px" />
           </a>
           <a
             href="https://www.linkedin.com/in/abhishekpanwarrr/"
             target="_blank"
             rel="noreferrer"
+            title="Linkedin"
             style={{ marginLeft: "30px" }}
           >
             <BsLinkedin size="22px" />
