@@ -6,7 +6,7 @@ const Header = React.lazy(() => import("../components/Header/Header"));
 const Projects = React.lazy(() => import("../components/Projects/Projects"));
 const Skills = React.lazy(() => import("../components/Skills/Skills"));
 const HomePage = () => {
-  const [theme, setTheme] = useState(false);
+  const [theme, setTheme] = useState(true);
 
   const themeToggler = () => {
     setTheme((theme) => !theme);
