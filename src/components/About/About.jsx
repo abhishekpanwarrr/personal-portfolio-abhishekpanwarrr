@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import mine from "../../assets/4444.jpg";
 import "./About.css";
-const About = ({ theme }) => {
+import { ThemeContext } from "../../context/ThemeContext";
+const About = () => {
+  const [theme] = useContext(ThemeContext);
   return (
     <div className={`about ${theme ? "" : "theme-bg"}`}>
       <h1 style={{ color: theme ? "" : "#fff" }}>ABOUT ME</h1>

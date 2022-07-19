@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import coding from "../../assets/coding.png";
-// import github from "../../assets/github.png";
 import "./Header.css";
 import { Wave } from "react-animated-text";
-
-const Header = ({ setTheme, theme }) => {
+import { ThemeContext } from "../../context/ThemeContext";
+const Header = () => {
+  const [theme] = useContext(ThemeContext);
   return (
     <div
       className="header"

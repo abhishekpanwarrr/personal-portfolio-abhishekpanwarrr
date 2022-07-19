@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { BsMoon, BsSun } from "react-icons/bs";
-// import { Link } from "react-router-dom";
 import "./Navbar.css";
-const Navbar = ({ theme, setTheme }) => {
+import { ThemeContext } from "../../context/ThemeContext";
+const Navbar = () => {
+  const [theme, setTheme] = useContext(ThemeContext);
+  const themeToggler = () => {
+    setTheme((theme) => !theme);
+  };
   return (
     <div
       className="header-nav"
@@ -18,7 +22,7 @@ const Navbar = ({ theme, setTheme }) => {
       </div>
       <div
         className={`dialog-button ${theme ? "" : "disabled"}`}
-        onClick={setTheme}
+        onClick={themeToggler}
       >
         {theme ? <BsMoon size="20px" /> : <BsSun size="20px" />}
       </div>
