@@ -1,6 +1,6 @@
 import React from "react";
 import "./Project.css";
-const Project = ({ image, title, theme, link }) => {
+const Project = ({ image, title, theme, link, github }) => {
   return (
     //
     <div style={{ color: theme ? "" : "#fff" }} className="project-container">
@@ -17,7 +17,7 @@ const Project = ({ image, title, theme, link }) => {
         <img src={image} alt={title} />
         <div className="project-demo">
           <a
-            href={link}
+            href={github}
             target="_blank"
             rel="noreferrer"
             style={{ background: theme ? "#000" : "" }}
