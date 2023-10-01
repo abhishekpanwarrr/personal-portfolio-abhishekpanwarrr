@@ -12,9 +12,10 @@ const Header = () => {
     >
       <div className="header-container">
         <img src={coding} alt="coding" />
-        <p>ABHISHEK PANWAR</p>
+        <p data-cy="dev-name">ABHISHEK PANWAR</p>
         <div className="details">
           <Wave
+            data-cy="wave"
             text="FRONT-END DEVELOPER"
             effect="stretch"
             effectChange={2.0}

@@ -6,7 +6,7 @@ const About = () => {
   const [theme] = useContext(ThemeContext);
   return (
     <div className={`about ${theme ? "" : "theme-bg"}`}>
-      <h1 style={{ color: theme ? "" : "#fff" }}>ABOUT ME</h1>
+      <h1 data-cy="about-heading" style={{ color: theme ? "" : "#fff" }}>ABOUT ME</h1>
       <div className="about-info">
         <div className="about-info-left">
           <div className={`polariod ${theme ? "" : "polariod-bg"}`}>
@@ -40,7 +40,7 @@ const About = () => {
             </div>
             <div className={`card-body ${theme ? "" : "card-body-bg"}`}>
               <br />
-              <p>
+              <p data-cy="about-para">
                 <span>Hi </span>
                 <br />
                 <br />

@@ -11,12 +11,13 @@ const Project = ({ image, title, theme, link, github }) => {
           color: theme ? "" : "#fff",
         }}
       >
-        <p className="project-title" style={{ color: theme ? "" : "#fff" }}>
+        <p data-cy="project-title" className="project-title" style={{ color: theme ? "" : "#fff" }}>
           {title}
         </p>
         <img src={image} alt={title} />
         <div className="project-demo">
           <a
+          data-cy="github-link"
             href={github}
             target="_blank"
             rel="noreferrer"
