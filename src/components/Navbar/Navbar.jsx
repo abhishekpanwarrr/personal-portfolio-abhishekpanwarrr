@@ -16,11 +16,12 @@ const Navbar = () => {
       }}
     >
       <div>
-        <a href="#footer" className="btn">
+        <a href="#footer" className="btn" data-cy="contact-btn">
           <span className="btn-text">Contact</span>
         </a>
       </div>
       <div
+        data-cy="theme-toggler"
         className={`dialog-button ${theme ? "" : "disabled"}`}
         onClick={themeToggler}
       >
