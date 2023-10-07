@@ -35,9 +35,11 @@ const skills = [
 
 const Skills = () => {
   return (
-    <div className="mt-5">
-      <h1 className="text-center text-5xl mt-6 mb-5">My Skills</h1>
-      <div className="flex gap-8 justify-center flex-wrap md:max-w-[60%] items-center mx-auto">
+    <div className="my-44">
+      <h1 className="text-5xl mb-12 border-b-2 border-[#FEC86A] max-w-max pb-3">
+        My Skills
+      </h1>
+      <div className="flex gap-8 flex-wrap">
         {skills.map((skill, index) => (
           <Card
             className="w-32 h-18 hover:bg-[#FEC86A] hover:border-[#FEC86A] transition-all hover:text-white"

@@ -1,111 +1,35 @@
+import { projectData } from "@/utils/data";
 import { Button } from "../ui/button";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
+import { Link } from "react-router-dom";
+
 const Portfolio = () => {
   return (
-    <>
-      <h1 className="my-8 font-medium text-5xl text-center">Portfolio</h1>
+    <div className="my-44">
+      <h1 className="text-5xl mb-12 border-b-2 border-[#FEC86A] max-w-max pb-3">Portfolio</h1>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <div className="grid gap-4">
-          <div className="relative group overflow-hidden">
-            <img
-              className="h-auto max-w-full group-hover:scale-150 transition-transform duration-300"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
-              alt=""
-            />
-            <div className="opacity-0 group-hover:opacity-100 absolute inset-0 items-center justify-center transition-opacity duration-300 flex flex-col gap-4 bg-[rgba(0,0,0,0.6)]">
-              <h3 className="text-white text-lg">Amazon app</h3>
-              <Button className="bg-[#FEC96B] hover:bg-[#FEC96B] text-black">
-                See more <AiOutlineArrowRight className="text-lg ml-1" />
-              </Button>
+        {projectData?.map((item) => (
+          <div className="grid gap-4">
+            <div className="relative group overflow-hidden">
+              <img
+                className="max-w-full group-hover:scale-125 transition-transform duration-300 object-cover h-full"
+                src={item.image}
+                alt={item.title}
+              />
+              <div className="opacity-0 group-hover:opacity-100 absolute inset-0 items-center justify-center transition-opacity duration-300 flex flex-col gap-4 bg-[rgba(0,0,0,0.6)]">
+                <h3 className="text-white text-lg">{item.title}</h3>
+                <Button className="bg-[#FEC96B] hover:bg-[#FEC96B] text-black">
+                  <Link to={item.link} target="_blank" className="flex">
+                    See more <AiOutlineArrowRight className="text-lg ml-1" />
+                  </Link>
+                </Button>
+              </div>
             </div>
           </div>
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg"
-              alt=""
-            />
-          </div>
-        </div>
-        <div className="grid gap-4">
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg"
-              alt=""
-            />
-          </div>
-        </div>
-        <div className="grid gap-4">
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg"
-              alt=""
-            />
-          </div>
-        </div>
-        <div className="grid gap-4">
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg"
-              alt=""
-            />
-          </div>
-        </div>
+        ))}
       </div>
-    </>
+    </div>
   );
 };
 
