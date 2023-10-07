@@ -8,13 +8,13 @@ import {
 } from "@/components/ui/sheet";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { Input } from "@/components/ui/input"
+import { Input } from "@/components/ui/input";
 
 export const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
     <div className="flex justify-between items-center h-10">
-      <h1>Abhishek</h1>
+      <h1 onClick={() => setOpen(true)}>Abhishek</h1>
       <ul className="flex gap-3">
         <li>
           <NavLink
@@ -48,8 +48,9 @@ export const Navbar = () => {
           </NavLink>
         </li>
       </ul>
-      <div><Input placeholder="Search" />
-</div>
+      <div>
+        <Input placeholder="Search" />
+      </div>
       <Sheet>
         {open ? <SheetTrigger>Open</SheetTrigger> : null}
         <SheetContent>
