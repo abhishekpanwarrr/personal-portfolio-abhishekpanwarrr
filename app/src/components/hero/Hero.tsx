@@ -8,6 +8,7 @@ import {
   BsWhatsapp,
 } from "react-icons/bs";
 import { Separator } from "@/components/ui/separator";
+import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <div className="flex flex-col lg:flex-row gap-3 pt-20 w-full">
@@ -27,11 +28,21 @@ const Hero = () => {
         </Button>
         <div className="flex gap-3 items-center mt-10">
           <Separator className="bg-[#FEC86A] w-20" />
-          <BsInstagram />
-          <BsGithub />
-          <BsWhatsapp />
-          <BsTwitter />
-          <BsLinkedin />
+          <Link to="/">
+            <BsInstagram />
+          </Link>
+          <Link to="/">
+            <BsGithub />
+          </Link>
+          <Link to="/">
+            <BsWhatsapp />
+          </Link>
+          <Link to="/">
+            <BsTwitter />
+          </Link>
+          <Link to="/">
+            <BsLinkedin />
+          </Link>
         </div>
       </div>
       <div className="flex justify-end items-end flex-1">

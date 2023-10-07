@@ -31,16 +31,36 @@ const Contact = () => {
       </div>
       <div className="flex gap-1 items-center">
         <Separator className="w-10 mr-1" />
-        <Button variant="outline">
-          <RiPhoneLine className="mr-1" />
-          +91-9991237576
-        </Button>
+        <TooltipProvider>
+          <Tooltip>
+            <TooltipTrigger>
+              {" "}
+              <Button variant="outline">
+                <RiPhoneLine className="mr-1" />
+                +91-9991237576
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>Click to call</p>
+            </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
       </div>
       <div className="flex gap-1 items-center">
         <Separator className="w-10 mr-1" />
-        <Button variant="secondary" className="max-w-max">
-          <GrLocationPin className="mr-1" /> Gurugram Haryana
-        </Button>
+        <TooltipProvider>
+          <Tooltip>
+            <TooltipTrigger>
+              {" "}
+              <Button variant="secondary" className="max-w-max">
+                <GrLocationPin className="mr-1" /> Gurugram Haryana
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>Catch up here</p>
+            </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
       </div>
     </div>
   );
