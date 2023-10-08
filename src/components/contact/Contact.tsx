@@ -19,7 +19,7 @@ import {
 
 const Contact = () => {
   return (
-    <div className="flex justify-between flex-col  md:flex-row gap-8">
+    <div className="flex justify-between flex-col  md:flex-row gap-8" id="contact">
       <div className="mt-8 mb-3 flex flex-col gap-3">
         <div className="flex gap-1 items-center">
           <Separator className="w-10 mr-1" />
@@ -28,8 +28,13 @@ const Contact = () => {
               <TooltipTrigger>
                 {" "}
                 <Button variant="destructive">
-                  <RiMailSendLine className="mr-1" />
-                  abhishekpanwar1718@gmail.com
+                  <a
+                    href="mailto:abhishekpanwar1718@gmail.com"
+                    className="flex items-center"
+                  >
+                    <RiMailSendLine className="mr-1" />
+                    abhishekpanwar1718@gmail.com
+                  </a>
                 </Button>
               </TooltipTrigger>
               <TooltipContent>
@@ -45,8 +50,10 @@ const Contact = () => {
               <TooltipTrigger>
                 {" "}
                 <Button variant="outline">
-                  <RiPhoneLine className="mr-1" />
-                  +91-9991237576
+                  <a href="tel:+919991237576" className="flex items-center">
+                    <RiPhoneLine className="mr-1" />
+                    +91-9991237576
+                  </a>
                 </Button>
               </TooltipTrigger>
               <TooltipContent>
@@ -76,19 +83,25 @@ const Contact = () => {
         <h1 className="text-2xl font-semibold text-[#EF4444]">Get in touch</h1>
         <div className="flex gap-3 items-center mt-5">
           <Separator className="bg-[#FEC86A] w-20" />
-          <Link to="/">
+          <Link
+            to="https://www.instagram.com/abhishekpanwarrr/"
+            target="_blank"
+          >
             <BsInstagram />
           </Link>
-          <Link to="/">
+          <Link to="https://github.com/abhishekpanwarrr" target="_blank">
             <BsGithub />
           </Link>
-          <Link to="/">
+          <Link to="https://wa.me/+919991237576" target="_blank">
             <BsWhatsapp />
           </Link>
           <Link to="/">
             <BsTwitter />
           </Link>
-          <Link to="/">
+          <Link
+            to="https://www.linkedin.com/in/abhishekpanwarrr/"
+            target="_blank"
+          >
             <BsLinkedin />
           </Link>
         </div>

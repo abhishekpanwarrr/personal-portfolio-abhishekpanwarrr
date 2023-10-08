@@ -6,59 +6,57 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { Input } from "@/components/ui/input";
+import { useMediaQuery } from "@/hooks/useQuery";
+import { HiOutlineMenuAlt3 } from "react-icons/hi";
 
 export const Navbar = () => {
-  const [open, setOpen] = useState(false);
+  let isPageWide = useMediaQuery("(min-width: 800px)");
+  console.log("isPageWide", isPageWide);
   return (
     <div className="flex justify-between items-center h-10">
-      <h1 onClick={() => setOpen(true)}>Abhishek</h1>
-      <ul className="flex gap-3">
-        <li>
-          <NavLink
-            to={"/"}
-            className={({ isActive }) =>
-              ` ${isActive ? "text-white" : "text-[#97989A]"}`
-            }
-          >
-            About
-          </NavLink>
-        </li>
-        <li>
-          {" "}
-          <NavLink
-            to={"/portfolio"}
-            className={({ isActive }) =>
-              ` ${isActive ? "text-white" : "text-[#97989A]"}`
-            }
-          >
-            Portfolio
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            to={"/contact"}
-            className={({ isActive }) =>
-              ` ${isActive ? "text-white" : "text-[#97989A]"}`
-            }
-          >
-            Contact
-          </NavLink>
-        </li>
-      </ul>
-      <div>
-        <Input placeholder="Search" />
-      </div>
+      <h1>Abhishek</h1>
+      {isPageWide && (
+        <>
+          <ul className="flex gap-3">
+            <li>
+              <a href="">About</a>
+            </li>
+            <li>
+              {" "}
+              <a href="#portfolio">Portfolio</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+          <div>
+            <Input placeholder="Search" />
+          </div>
+        </>
+      )}
       <Sheet>
-        {open ? <SheetTrigger>Open</SheetTrigger> : null}
+        {!isPageWide ? (
+          <SheetTrigger>
+            <HiOutlineMenuAlt3 className="h-8 w-8" />
+          </SheetTrigger>
+        ) : null}
         <SheetContent>
           <SheetHeader>
-            <SheetTitle>Are you sure absolutely sure?</SheetTitle>
+            {/* <SheetTitle>Are you sure absolutely sure?</SheetTitle> */}
             <SheetDescription>
-              This action cannot be undone. This will permanently delete your
-              account and remove your data from our servers.
+              <ul className="flex flex-col gap-6 mt-10 items-center">
+                <li className="text-2xl transition-all hover:border-b max-w-max hover:border-[#FEC86A] hover:text-white">
+                  <Link to="/">Home</Link>
+                </li>
+                <li className="text-2xl transition-all hover:border-b max-w-max hover:border-[#FEC86A] hover:text-white">
+                  <Link to="/portfolio">Portfolio</Link>
+                </li>
+                <li className="text-2xl transition-all hover:border-b max-w-max hover:border-[#FEC86A] hover:text-white">
+                  <Link to="/contact">Contact</Link>
+                </li>
+              </ul>
             </SheetDescription>
           </SheetHeader>
         </SheetContent>

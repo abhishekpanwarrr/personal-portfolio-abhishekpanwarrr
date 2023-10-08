@@ -24,23 +24,29 @@ const Hero = () => {
           variant="outline"
           className="max-w-max border-[#FEC86A] text-[#FEC86A]"
         >
-          Contact Me
+          <a href="#contact">Contact Me</a>
         </Button>
         <div className="flex gap-3 items-center mt-10">
           <Separator className="bg-[#FEC86A] w-20" />
-          <Link to="/">
+          <Link
+            to="https://www.instagram.com/abhishekpanwarrr/"
+            target="_blank"
+          >
             <BsInstagram />
           </Link>
-          <Link to="/">
+          <Link to="https://github.com/abhishekpanwarrr" target="_blank">
             <BsGithub />
           </Link>
-          <Link to="/">
+          <Link to="https://wa.me/+919991237576" target="_blank">
             <BsWhatsapp />
           </Link>
           <Link to="/">
             <BsTwitter />
           </Link>
-          <Link to="/">
+          <Link
+            to="https://www.linkedin.com/in/abhishekpanwarrr/"
+            target="_blank"
+          >
             <BsLinkedin />
           </Link>
         </div>
