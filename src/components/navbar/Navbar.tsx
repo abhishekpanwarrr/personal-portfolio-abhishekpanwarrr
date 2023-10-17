@@ -5,8 +5,8 @@ import {
   SheetHeader,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { Link } from "react-router-dom";
-import { Input } from "@/components/ui/input";
+// import { Link } from "react-router-dom";
+// import { Input } from "@/components/ui/input";
 import { useMediaQuery } from "@/hooks/useQuery";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 
