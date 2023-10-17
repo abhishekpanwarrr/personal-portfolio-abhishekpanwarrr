@@ -14,13 +14,13 @@ export const Navbar = () => {
   let isPageWide = useMediaQuery("(min-width: 800px)");
   console.log("isPageWide", isPageWide);
   return (
-    <div className="flex justify-between items-center h-10">
+    <div className="flex justify-between items-center h-10 sticky top-0 bg-[#34343A]">
       <h1>Abhishek</h1>
       {isPageWide && (
         <>
           <ul className="flex gap-3">
             <li>
-              <a href="">About</a>
+              <a href="#">Home</a>
             </li>
             <li>
               {" "}
@@ -30,9 +30,9 @@ export const Navbar = () => {
               <a href="#contact">Contact</a>
             </li>
           </ul>
-          <div>
+          {/* <div>
             <Input placeholder="Search" />
-          </div>
+          </div> */}
         </>
       )}
       <Sheet>
@@ -47,13 +47,13 @@ export const Navbar = () => {
             <SheetDescription>
               <ul className="flex flex-col gap-6 mt-10 items-center">
                 <li className="text-2xl transition-all hover:border-b max-w-max hover:border-[#FEC86A] hover:text-white">
-                  <Link to="/">Home</Link>
+                  <a href="#">Home</a>
                 </li>
                 <li className="text-2xl transition-all hover:border-b max-w-max hover:border-[#FEC86A] hover:text-white">
-                  <Link to="/portfolio">Portfolio</Link>
+                  <a href="#portfolio">Portfolio</a>
                 </li>
                 <li className="text-2xl transition-all hover:border-b max-w-max hover:border-[#FEC86A] hover:text-white">
-                  <Link to="/contact">Contact</Link>
+                  <a href="#contact">Contact</a>
                 </li>
               </ul>
             </SheetDescription>
