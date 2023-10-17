@@ -3,7 +3,8 @@ import netflix from "@/assets/netflix.png";
 import task from "@/assets/task.png";
 import vragency from "@/assets/vragency.png";
 import filterMovie from "@/assets/movie-filter-apps.netlify.app_.png";
-import tictactoe from "@/assets/tictactoe.png";
+import kanban from "@/assets/kanban.png"
+
 export const projectData = [
     {
       id: 1,
@@ -41,10 +42,10 @@ export const projectData = [
       github: "https://github.com/abhishekpanwarrr/movie-search",
     },
     {
-      id: 6,
-      image: tictactoe,
-      title: "Tic Tac Toe",
-      link: "https://tic-tac-toe-react-neon.vercel.app/",
-      github: "https://github.com/abhishekpanwarrr/tic-tac-toe-react",
-    },
+      id:6,
+      image:kanban,
+      title:"Kanban Board",
+      link:"https://kanban-boardd.netlify.app/",
+      github:"https://github.com/abhishekpanwarrr/kanban-board"
+    }
   ];
