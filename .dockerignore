@@ -1,0 +1,4 @@
+node_modules/
+cypress/
+dist/
+.vscode
