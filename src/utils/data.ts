@@ -12,6 +12,7 @@ export const projectData = [
       title: "Personal Theme",
       link: "https://react-website-1.netlify.app/",
       github: "https://github.com/abhishekpanwarrr/react-website-1",
+      linkText:"Link to personal theme"
     },
     {
       id: 2,
@@ -19,6 +20,7 @@ export const projectData = [
       title: "Netflix Clone App",
       link: "https://abhishek-netflix-clonee.netlify.app/",
       github: "https://github.com/abhishekpanwarrr/netflix-react",
+      linkText:"Link to netflix clone app"
     },
     {
       id: 3,
@@ -26,6 +28,7 @@ export const projectData = [
       title: "Task Manager App",
       link: "https://todos-app-react-firebase.netlify.app/",
       github: "https://github.com/abhishekpanwarrr/task-manager-app",
+      linkText:"Link to todos app"
     },
     {
       id: 4,
@@ -33,6 +36,7 @@ export const projectData = [
       title: "VR Agency App",
       link: "https://tailwind-react-website.vercel.app/",
       github: "https://github.com/abhishekpanwarrr/tailwind-react-website",
+      linkText:"Link to personal theme for vr Agency App"
     },
     {
       id: 5,
@@ -40,12 +44,14 @@ export const projectData = [
       title: "Movie Filter App",
       link: "https://movie-filter-apps.netlify.app/",
       github: "https://github.com/abhishekpanwarrr/movie-search",
+      linkText:"Link to movie filter app"
     },
     {
       id:6,
       image:kanban,
       title:"Kanban Board",
       link:"https://kanban-boardd.netlify.app/",
-      github:"https://github.com/abhishekpanwarrr/kanban-board"
+      github:"https://github.com/abhishekpanwarrr/kanban-board",
+      linkText:"Link to kanban board app"
     }
   ];

@@ -26,7 +26,7 @@ const Portfolio = () => {
                 <h3 className="text-white text-lg">{item.title}</h3>
                 <div className="flex gap-3 flex-col">
                   <Button className="bg-[#FEC96B] hover:bg-[#FEC96B] text-black">
-                    <Link to={item.link} target="_blank" className="flex">
+                    <Link to={item.link} target="_blank" className="flex" aria-label={item.linkText}>
                       See more <AiOutlineArrowRight className="text-lg ml-1" />
                     </Link>
                   </Button>
