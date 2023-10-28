@@ -19,7 +19,10 @@ import {
 
 const Contact = () => {
   return (
-    <div className="flex justify-between flex-col  md:flex-row gap-8" id="contact">
+    <div
+      className="flex justify-between flex-col  md:flex-row gap-8"
+      id="contact"
+    >
       <div className="mt-8 mb-3 flex flex-col gap-3">
         <div className="flex gap-1 items-center">
           <Separator className="w-10 mr-1" />
@@ -86,21 +89,35 @@ const Contact = () => {
           <Link
             to="https://www.instagram.com/abhishekpanwarrr/"
             target="_blank"
+            aria-label="Link for Instagram Account"
+            className="p-1"
           >
             <BsInstagram />
           </Link>
-          <Link to="https://github.com/abhishekpanwarrr" target="_blank">
+          <Link
+            to="https://github.com/abhishekpanwarrr"
+            target="_blank"
+            aria-label="Link for Github Account"
+            className="p-1"
+          >
             <BsGithub />
           </Link>
-          <Link to="https://wa.me/+919991237576" target="_blank">
+          <Link
+            to="https://wa.me/+919991237576"
+            target="_blank"
+            aria-label="Link for Whatsapp Account"
+            className="p-1"
+          >
             <BsWhatsapp />
           </Link>
-          <Link to="/">
+          <Link to="/" aria-label="Link for Twitter Account" className="p-1">
             <BsTwitter />
           </Link>
           <Link
             to="https://www.linkedin.com/in/abhishekpanwarrr/"
             target="_blank"
+            aria-label="Link for LinkedIn Account"
+            className="p-1"
           >
             <BsLinkedin />
           </Link>

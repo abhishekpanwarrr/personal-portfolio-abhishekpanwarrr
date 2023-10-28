@@ -1,9 +1,9 @@
-import personal from "@/assets/react.png";
-import netflix from "@/assets/netflix.png";
-import task from "@/assets/task.png";
-import vragency from "@/assets/vragency.png";
-import filterMovie from "@/assets/movie-filter-apps.netlify.app_.png";
-import kanban from "@/assets/kanban.png"
+import personal from "@/assets/react.avif";
+import netflix from "@/assets/netflix.avif";
+import task from "@/assets/task.avif";
+import vragency from "@/assets/vragency.avif";
+import filterMovie from "@/assets/movie-filter-apps.netlify.app.avif";
+import kanban from "@/assets/kanban.avif"
 
 export const projectData = [
     {
