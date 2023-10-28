@@ -19,15 +19,22 @@ const Portfolio = () => {
                 src={item.image}
                 alt={item.title}
                 style={{
-                  minWidth:"200px"
+                  minWidth: "200px",
+                  minHeight: "200px",
                 }}
               />
               <div className="opacity-0 group-hover:opacity-100 absolute inset-0 items-center justify-center transition-opacity duration-300 flex flex-col gap-4 bg-[rgba(0,0,0,0.6)]">
-                <h3 className="text-white text-lg">{item.title}</h3>
+                <h5 className="text-white text-lg">{item.title}</h5>
                 <div className="flex gap-3 flex-col">
                   <Button className="bg-[#FEC96B] hover:bg-[#FEC96B] text-black">
-                    <Link to={item.link} target="_blank" className="flex" aria-label={item.linkText}>
-                      See more <AiOutlineArrowRight className="text-lg ml-1" />
+                    <Link
+                      to={item.link}
+                      target="_blank"
+                      className="flex"
+                      aria-label={item.linkText}
+                    >
+                      Learn more{" "}
+                      <AiOutlineArrowRight className="text-lg ml-1" />
                     </Link>
                   </Button>
                   <Button className="bg-[#FEC96B] hover:bg-[#FEC96B] text-black">

@@ -37,8 +37,8 @@ export const Navbar = () => {
       )}
       <Sheet>
         {!isPageWide ? (
-          <SheetTrigger>
-            <HiOutlineMenuAlt3 className="h-8 w-8" />
+          <SheetTrigger aria-label="menu-button">
+            <HiOutlineMenuAlt3 className="h-8 w-8" aria-label="menu-button" />
           </SheetTrigger>
         ) : null}
         <SheetContent>
