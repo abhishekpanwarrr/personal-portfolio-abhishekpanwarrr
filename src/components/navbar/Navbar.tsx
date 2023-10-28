@@ -20,14 +20,14 @@ export const Navbar = () => {
         <>
           <ul className="flex gap-3">
             <li>
-              <a href="#">Home</a>
+              <a href="#" className="hover:underline">Home</a>
             </li>
             <li>
               {" "}
-              <a href="#portfolio">Portfolio</a>
+              <a href="#portfolio" className="hover:underline">Portfolio</a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a href="#contact" className="hover:underline">Contact</a>
             </li>
           </ul>
           {/* <div>

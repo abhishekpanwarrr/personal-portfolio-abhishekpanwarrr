@@ -18,6 +18,9 @@ const Portfolio = () => {
                 className="max-w-full group-hover:scale-125 transition-transform duration-300 object-cover h-full"
                 src={item.image}
                 alt={item.title}
+                style={{
+                  minWidth:"200px"
+                }}
               />
               <div className="opacity-0 group-hover:opacity-100 absolute inset-0 items-center justify-center transition-opacity duration-300 flex flex-col gap-4 bg-[rgba(0,0,0,0.6)]">
                 <h3 className="text-white text-lg">{item.title}</h3>

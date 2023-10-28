@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import Logo from "@/assets/main.png";
+import Logo from "@/assets/main.avif";
 import {
   BsGithub,
   BsInstagram,
@@ -31,21 +31,35 @@ const Hero = () => {
           <Link
             to="https://www.instagram.com/abhishekpanwarrr/"
             target="_blank"
+            aria-label="Link for Instagram Account"
+            className="p-1"
           >
             <BsInstagram />
           </Link>
-          <Link to="https://github.com/abhishekpanwarrr" target="_blank">
+          <Link
+            to="https://github.com/abhishekpanwarrr"
+            target="_blank"
+            aria-label="Link for Github Account"
+            className="p-1"
+          >
             <BsGithub />
           </Link>
-          <Link to="https://wa.me/+919991237576" target="_blank">
+          <Link
+            to="https://wa.me/+919991237576"
+            target="_blank"
+            aria-label="Link for Whatsapp Account"
+            className="p-1"
+          >
             <BsWhatsapp />
           </Link>
-          <Link to="/">
+          <Link to="/" aria-label="Link for Twitter Account" className="p-1">
             <BsTwitter />
           </Link>
           <Link
             to="https://www.linkedin.com/in/abhishekpanwarrr/"
             target="_blank"
+            aria-label="Link for LinkedIn Account"
+            className="p-1"
           >
             <BsLinkedin />
           </Link>
