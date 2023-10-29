@@ -12,7 +12,7 @@ const Portfolio = () => {
       </h1>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {projectData?.map((item) => (
-          <div className="grid gap-4">
+          <div key={item.id} className="grid gap-4">
             <div className="relative group overflow-hidden">
               <img
                 className="max-w-full group-hover:scale-125 transition-transform duration-300 object-cover h-full"
