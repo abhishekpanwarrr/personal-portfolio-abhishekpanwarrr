@@ -38,7 +38,12 @@ const Portfolio = () => {
                     </Link>
                   </Button>
                   <Button className="bg-[#FEC96B] hover:bg-[#FEC96B] text-black">
-                    <Link to={item.github} target="_blank" className="flex">
+                    <Link
+                      to={item.github}
+                      target="_blank"
+                      className="flex"
+                      aria-label={item.linkText}
+                    >
                       Github <AiOutlineArrowRight className="text-lg ml-1" />
                     </Link>
                   </Button>
