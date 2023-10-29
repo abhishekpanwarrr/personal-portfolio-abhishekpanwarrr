@@ -1,19 +1,30 @@
-import Hero from "./components/hero/Hero";
-import About from "./components/about/About";
-import Skills from "./components/skills/Skills";
-import Portfolio from "./components/portfolio/Portfolio";
-import Experience from "./components/experience/Experience";
-import Contact from "./components/contact/Contact";
+import React, { Suspense } from "react";
+import "./App.css";
+const Hero = React.lazy(() => import("./components/hero/Hero"));
+const About = React.lazy(() => import("./components/about/About"));
+const Portfolio = React.lazy(() => import("./components/portfolio/Portfolio"));
+const Experience = React.lazy(
+  () => import("./components/experience/Experience")
+);
+const Contact = React.lazy(() => import("./components/contact/Contact"));
+const Skills = React.lazy(() => import("./components/skills/Skills"));
+
 function App() {
   return (
-    <>
+    <Suspense
+      fallback={
+        <div className="w-full h-full absolute inset-0 z-40 flex items-center justify-center bg-[#34343A]">
+          <span className="loader"></span>
+        </div>
+      }
+    >
       <Hero />
       <About />
       <Skills />
       <Portfolio />
       <Experience />
       <Contact />
-    </>
+    </Suspense>
   );
 }
 
