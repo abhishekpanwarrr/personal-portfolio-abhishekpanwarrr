@@ -33,7 +33,7 @@ const Portfolio = () => {
                       className="flex"
                       aria-label={item.linkText}
                     >
-                      Learn more{" "}
+                      {item.title} Link
                       <AiOutlineArrowRight className="text-lg ml-1" />
                     </Link>
                   </Button>
@@ -44,7 +44,8 @@ const Portfolio = () => {
                       className="flex"
                       aria-label={item.linkText}
                     >
-                      Github <AiOutlineArrowRight className="text-lg ml-1" />
+                      {item.title} Github Link{" "}
+                      <AiOutlineArrowRight className="text-lg ml-1" />
                     </Link>
                   </Button>
                 </div>
