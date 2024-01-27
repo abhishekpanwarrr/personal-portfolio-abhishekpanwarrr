@@ -3,16 +3,16 @@ import { Separator } from "../ui/separator";
 const About = () => {
   return (
     <div className="mb-32">
-      <h1 className="text-5xl mb-12 border-b-2 border-[#FEC86A] max-w-max pb-3">About</h1>
-      <div className="text-xl text-[#CBCCCD] md:max-w-[70%] md:flex gap-3 ">
-        <Separator className="bg-[#FEC86A] w-6 h-0.5 mt-4 hidden md:flex" />{" "}
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum
-        assumenda enim voluptatibus animi rem necessitatibus repellendus
-        maiores, esse in velit! Et, perspiciatis dolorum cupiditate culpa cum
-        expedita quae dolorem voluptatibus. Lorem ipsum dolor sit amet,
-        consectetur adipisicing elit. Fugit, rem consequatur! Odio magni commodi
-        culpa. Nesciunt impedit officiis quia blanditiis accusamus. Repudiandae
-        nam nesciunt nulla necessitatibus eaque, voluptate at voluptas.
+      <h1 className="mb-12 max-w-max border-b-2 border-[#FEC86A] pb-3 text-5xl">
+        About
+      </h1>
+      <div className="gap-3 text-xl text-[#CBCCCD] md:flex md:max-w-[70%] ">
+        <Separator className="mt-4 hidden h-0.5 w-5 bg-[#FEC86A] md:flex" /> I
+        am a passionate React.js developer with 1.6 years of hands‐on experience
+        in crafting robust and user‐friendly web applications. My expertise lies
+        in building dynamic and responsive user interfaces using React.js,
+        combined with a strong background in JavaScript and proficiency in
+        testing with Cypress
       </div>
     </div>
   );

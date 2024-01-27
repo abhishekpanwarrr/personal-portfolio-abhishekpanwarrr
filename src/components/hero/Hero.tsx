@@ -1,18 +1,12 @@
 import { Button } from "@/components/ui/button";
 import Logo from "@/assets/main.avif";
-import {
-  BsGithub,
-  BsInstagram,
-  BsLinkedin,
-  BsTwitter,
-  BsWhatsapp,
-} from "react-icons/bs";
+import { BsGithub, BsLinkedin, BsTwitter, BsWhatsapp } from "react-icons/bs";
 import { Separator } from "@/components/ui/separator";
 import { Link } from "react-router-dom";
 const Hero = () => {
   return (
-    <div className="flex flex-col lg:flex-row gap-3 pt-20 w-full">
-      <div className="flex flex-col gap-5 flex-3 pt-20">
+    <div className="flex w-full flex-col gap-3 pt-20 lg:flex-row">
+      <div className="flex-3 flex flex-col gap-5 pt-20">
         <h3 className="text-5xl leading-snug">
           I'm{" "}
           <span className="text-[#FEC86A]">
@@ -26,16 +20,8 @@ const Hero = () => {
         >
           <a href="#contact">Contact Me</a>
         </Button>
-        <div className="flex gap-3 items-center mt-10">
-          <Separator className="bg-[#FEC86A] w-20" />
-          <Link
-            to="https://www.instagram.com/abhishekpanwarrr/"
-            target="_blank"
-            aria-label="Link for Instagram Account"
-            className="p-1"
-          >
-            <BsInstagram />
-          </Link>
+        <div className="mt-10 flex items-center gap-3">
+          <Separator className="w-20 bg-[#FEC86A]" />
           <Link
             to="https://github.com/abhishekpanwarrr"
             target="_blank"
@@ -45,7 +31,7 @@ const Hero = () => {
             <BsGithub />
           </Link>
           <Link
-            to="https://wa.me/+919991237576"
+            to="https://wa.me/+918199988872"
             target="_blank"
             aria-label="Link for Whatsapp Account"
             className="p-1"
@@ -65,11 +51,11 @@ const Hero = () => {
           </Link>
         </div>
       </div>
-      <div className="flex justify-end items-end flex-1">
+      <div className="flex flex-1 items-end justify-end">
         <img
           src={Logo}
           alt="Logo"
-          className=" min-w-full max-h-[650px] object-cover"
+          className=" max-h-[650px] min-w-full object-cover"
         />
       </div>
     </div>

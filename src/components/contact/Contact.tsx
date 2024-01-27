@@ -9,23 +9,17 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { Link } from "react-router-dom";
-import {
-  BsGithub,
-  BsInstagram,
-  BsLinkedin,
-  BsTwitter,
-  BsWhatsapp,
-} from "react-icons/bs";
+import { BsGithub, BsLinkedin, BsTwitter, BsWhatsapp } from "react-icons/bs";
 
 const Contact = () => {
   return (
     <div
-      className="flex justify-between flex-col  md:flex-row gap-8"
+      className="flex flex-col justify-between  gap-8 md:flex-row"
       id="contact"
     >
-      <div className="mt-8 mb-3 flex flex-col gap-3">
-        <div className="flex gap-1 items-center">
-          <Separator className="w-10 mr-1" />
+      <div className="mb-3 mt-8 flex flex-col gap-3">
+        <div className="flex items-center gap-1">
+          <Separator className="mr-1 w-10" />
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger>
@@ -46,8 +40,8 @@ const Contact = () => {
             </Tooltip>
           </TooltipProvider>
         </div>
-        <div className="flex gap-1 items-center">
-          <Separator className="w-10 mr-1" />
+        <div className="flex items-center gap-1">
+          <Separator className="mr-1 w-10" />
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger>
@@ -55,7 +49,7 @@ const Contact = () => {
                 <Button variant="outline">
                   <a href="tel:+919991237576" className="flex items-center">
                     <RiPhoneLine className="mr-1" />
-                    +91-9991237576
+                    +91-8199988872
                   </a>
                 </Button>
               </TooltipTrigger>
@@ -65,8 +59,8 @@ const Contact = () => {
             </Tooltip>
           </TooltipProvider>
         </div>
-        <div className="flex gap-1 items-center">
-          <Separator className="w-10 mr-1" />
+        <div className="flex items-center gap-1">
+          <Separator className="mr-1 w-10" />
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger>
@@ -84,16 +78,8 @@ const Contact = () => {
       </div>
       <div className="mb-8">
         <h1 className="text-2xl font-semibold text-[#EF4444]">Get in touch</h1>
-        <div className="flex gap-3 items-center mt-5">
-          <Separator className="bg-[#FEC86A] w-20" />
-          <Link
-            to="https://www.instagram.com/abhishekpanwarrr/"
-            target="_blank"
-            aria-label="Link for Instagram Account"
-            className="p-1"
-          >
-            <BsInstagram />
-          </Link>
+        <div className="mt-5 flex items-center gap-3">
+          <Separator className="w-20 bg-[#FEC86A]" />
           <Link
             to="https://github.com/abhishekpanwarrr"
             target="_blank"
@@ -103,7 +89,7 @@ const Contact = () => {
             <BsGithub />
           </Link>
           <Link
-            to="https://wa.me/+919991237576"
+            to="https://wa.me/+918199988872"
             target="_blank"
             aria-label="Link for Whatsapp Account"
             className="p-1"
