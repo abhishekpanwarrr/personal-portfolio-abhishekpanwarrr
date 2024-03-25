@@ -13,7 +13,7 @@ export const Navbar = () => {
 
   return (
     <div className="sticky top-0 flex h-10 items-center justify-between bg-[#34343A]">
-      <h1>Abhishek</h1>
+      <h1 className="text-2xl md:text-3xl">Abhishek</h1>
       {isPageWide && (
         <>
           <ul className="flex gap-3">

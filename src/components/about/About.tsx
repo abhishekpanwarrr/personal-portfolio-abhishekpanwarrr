@@ -8,7 +8,7 @@ const About = () => {
       </h1>
       <div className="gap-3 text-xl text-[#CBCCCD] md:flex md:max-w-[70%] ">
         <Separator className="mt-4 hidden h-0.5 w-5 bg-[#FEC86A] md:flex" /> I
-        am a passionate React.js developer with 1.6 years of hands‐on experience
+        am a passionate Frontend Developer with 1.6 years of hands‐on experience
         in crafting robust and user‐friendly web applications. My expertise lies
         in building dynamic and responsive user interfaces using React.js,
         combined with a strong background in JavaScript and proficiency in

@@ -1,6 +1,5 @@
 import { projectData } from "@/utils/data";
 import { Button } from "../ui/button";
-import { AiOutlineArrowRight } from "react-icons/ai";
 
 import { Link } from "react-router-dom";
 
@@ -10,45 +9,76 @@ const Portfolio = () => {
       <h1 className="text-5xl mb-12 border-b-2 border-[#FEC86A] max-w-max pb-3">
         Portfolio
       </h1>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 gap-4">
         {projectData?.map((item) => (
-          <div key={item.id} className="grid gap-4">
-            <div className="relative group overflow-hidden">
-              <img
-                className="max-w-full group-hover:scale-125 transition-transform duration-300 object-cover h-full"
-                src={item.image}
-                alt={item.title}
-                style={{
-                  minWidth: "200px",
-                  minHeight: "200px",
-                }}
-              />
-              <div className="opacity-0 group-hover:opacity-100 absolute inset-0 items-center justify-center transition-opacity duration-300 flex flex-col gap-4 bg-[rgba(0,0,0,0.6)]">
-                <h5 className="text-white text-lg">{item.title}</h5>
-                <div className="flex gap-3 flex-col">
-                  <Button className="bg-[#FEC96B] hover:bg-[#FEC96B] text-black">
-                    <Link
-                      to={item.link}
-                      target="_blank"
-                      className="flex"
-                      aria-label={item.linkText}
+          <div
+            key={item.id}
+            className="max-w-sm border bg-white border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          >
+            <img
+              className="rounded-t-lg max-h-[200px] min-h-[200px] min-w-[100%]"
+              src={item.image}
+              alt=""
+            />
+            <div className="p-5">
+              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                {item.title}
+              </h5>
+              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Here are the biggest enterprise technology acquisitions of 2021
+                so far, in reverse chronological order.
+              </p>
+              <div className="flex justify-between flex-col gap-2 md:flex-row">
+                <Button variant="destructive">
+                  <Link
+                    to={item.link}
+                    target="_blank"
+                    className="flex items-center"
+                    aria-label={item.title}
+                  >
+                    Live website
+                    <svg
+                      className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 14 10"
                     >
-                      {item.title} Link
-                      <AiOutlineArrowRight className="text-lg ml-1" />
-                    </Link>
-                  </Button>
-                  <Button className="bg-[#FEC96B] hover:bg-[#FEC96B] text-black">
-                    <Link
-                      to={item.github}
-                      target="_blank"
-                      className="flex"
-                      aria-label={item.linkText}
+                      <path
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M1 5h12m0 0L9 1m4 4L9 9"
+                      />
+                    </svg>
+                  </Link>
+                </Button>
+                <Button variant="awesome">
+                  <Link
+                    to={item.github}
+                    target="_blank"
+                    className="flex items-center"
+                    aria-label={item.title}
+                  >
+                    Github
+                    <svg
+                      className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 14 10"
                     >
-                      {item.title} Github Link{" "}
-                      <AiOutlineArrowRight className="text-lg ml-1" />
-                    </Link>
-                  </Button>
-                </div>
+                      <path
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M1 5h12m0 0L9 1m4 4L9 9"
+                      />
+                    </svg>
+                  </Link>
+                </Button>
               </div>
             </div>
           </div>
