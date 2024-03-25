@@ -1,8 +1,9 @@
 import { Button } from "@/components/ui/button";
 import Logo from "@/assets/main.avif";
-import { BsGithub, BsLinkedin, BsTwitter, BsWhatsapp } from "react-icons/bs";
+import { BsGithub, BsLinkedin, BsWhatsapp } from "react-icons/bs";
 import { Separator } from "@/components/ui/separator";
 import { Link } from "react-router-dom";
+
 const Hero = () => {
   return (
     <div className="flex w-full flex-col gap-3 pt-20 lg:flex-row">

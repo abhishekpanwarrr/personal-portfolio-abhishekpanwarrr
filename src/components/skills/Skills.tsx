@@ -5,7 +5,10 @@ import {
   SiJavascript,
   SiTypescript,
   SiMongodb,
+  SiApple,
+  SiExpress,
 } from "react-icons/si";
+
 const skills = [
   { title: "HTML 5", icon: <FaHtml5 className="text-5xl text-[#FF6D00]" /> },
   { title: "CSS 3", icon: <FaCss3 className="text-5xl text-[#019EE8]" /> },
@@ -19,9 +22,18 @@ const skills = [
   },
   { title: "React Js", icon: <FaReact className="text-5xl text-blue-700" /> },
   {
+    title: "React Native",
+    icon: <SiApple className="text-5xl text-green-500" />,
+  },
+  {
+    title: "Express Js",
+    icon: <SiExpress className="text-5xl text-green-500" />,
+  },
+  {
     title: "MongoDB",
     icon: <SiMongodb className="text-5xl text-green-500" />,
   },
+
   {
     title: "Cypress",
     icon: (
@@ -39,7 +51,7 @@ const Skills = () => {
       <div className="flex flex-wrap gap-8">
         {skills.map((skill, index) => (
           <Card
-            className="h-18 w-32 transition-all hover:border-[#FEC86A] hover:bg-[#FEC86A] hover:text-white"
+            className="h-18 w-36 transition-all hover:border-[#FEC86A] hover:bg-[#FEC86A] hover:text-white"
             key={index}
           >
             <CardHeader>
