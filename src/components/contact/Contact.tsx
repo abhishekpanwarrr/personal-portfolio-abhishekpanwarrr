@@ -49,7 +49,7 @@ const Contact = () => {
                 <Button variant="outline">
                   <a href="tel:+919991237576" className="flex items-center">
                     <RiPhoneLine className="mr-1" />
-                    +91-8199988872
+                    +91-9991237576
                   </a>
                 </Button>
               </TooltipTrigger>
