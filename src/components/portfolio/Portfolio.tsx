@@ -29,7 +29,7 @@ const Portfolio = () => {
                 so far, in reverse chronological order.
               </p>
               <div className="flex justify-between flex-col gap-2 md:flex-row">
-                <Button variant="destructive">
+                <Button variant="destructive" disabled={!item.link}>
                   <Link
                     to={item.link}
                     target="_blank"
