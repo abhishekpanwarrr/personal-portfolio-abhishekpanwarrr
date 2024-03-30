@@ -7,12 +7,12 @@ const Portfolio = () => {
   return (
     <div className="my-44" id="portfolio">
       <h1 className="text-5xl mb-12 border-b-2 border-[#FEC86A] max-w-max pb-3">
-        Portfolio
+        Personal Projects
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 gap-4">
-        {projectData?.map((item) => (
+        {projectData?.map((item, index) => (
           <div
-            key={item.id}
+            key={index}
             className="max-w-sm border bg-white border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
           >
             <img
@@ -25,8 +25,7 @@ const Portfolio = () => {
                 {item.title}
               </h5>
               <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                Here are the biggest enterprise technology acquisitions of 2021
-                so far, in reverse chronological order.
+                {item.description}
               </p>
               <div className="flex justify-between flex-col gap-2 md:flex-row">
                 <Button variant="destructive" disabled={!item.link}>
