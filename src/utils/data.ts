@@ -6,8 +6,16 @@ import filterMovie from "@/assets/movie-filter-apps.netlify.app.avif";
 import kanban from "@/assets/kanban.avif"
 import foodyApp from "@/assets/foodyApp.avif"
 import amazonClone from "@/assets/amazonClone.avif"
+import hotel from "@/assets/hotel.avif";
 
 export const projectData = [
+  {
+    image: hotel,
+    title: "Hotel Booking App",
+    link: "https://hotel-booking-frontend-gilt.vercel.app/",
+    github: "https://github.com/abhishekpanwarrr/mern-hotel-bookin",
+    description: "This is a clone of the Hotel Booking website built using the MERN stack (MongoDB, Express.js, React, Node.js). It includes user authentication, user profile, booking hotels in liked list and cart functionality",
+  },
   {
     image: amazonClone,
     title: "Amazon MERN App",

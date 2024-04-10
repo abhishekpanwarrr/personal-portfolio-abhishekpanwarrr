@@ -89,7 +89,7 @@ const Contact = () => {
             <BsGithub />
           </Link>
           <Link
-            to="https://wa.me/+918199988872"
+            to="https://wa.me/+919991237576"
             target="_blank"
             aria-label="Link for Whatsapp Account"
             className="p-1"
