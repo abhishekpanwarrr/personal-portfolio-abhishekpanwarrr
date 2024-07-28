@@ -44,14 +44,14 @@ const skills = [
 
 const Skills = () => {
   return (
-    <div className="my-44">
+    <div className="my-10">
       <h1 className="mb-12 max-w-max border-b-2 border-[#FEC86A] pb-3 text-5xl">
         My Skills
       </h1>
       <div className="flex flex-wrap gap-8">
-        {skills.map((skill, index) => (
+        {skills?.map((skill, index) => (
           <Card
-            className="h-18 w-36 transition-all hover:border-[#FEC86A] hover:bg-[#FEC86A] hover:text-white"
+            className="h-18 w-36 ease-in-out duration-500 transition-all hover:border-[#FEC86A] hover:bg-[#FEC86A] hover:text-white"
             key={index}
           >
             <CardHeader>

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <div className="flex w-full flex-col gap-3 pt-20 lg:flex-row">
+    <div className="flex w-full flex-col gap-3 lg:flex-row">
       <div className="flex-3 flex flex-col gap-5 pt-20">
         <h3 className="text-3xl md:text-4xl lg:text-5xl leading-snug">
           I'm{" "}

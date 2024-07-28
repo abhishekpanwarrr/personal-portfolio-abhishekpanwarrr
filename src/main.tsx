@@ -6,8 +6,6 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
-
-import About from "./pages/About.tsx";
 import App from "./App.tsx";
 import "./index.css";
 import { Root } from "./pages/Root.tsx";
@@ -16,7 +14,6 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Root />}>
       <Route path="" element={<App />} />
-      <Route path="about" element={<About />} />
       <Route path="*" element={<h1>404</h1>} />
     </Route>
   )

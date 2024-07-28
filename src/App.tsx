@@ -1,5 +1,6 @@
 import React, { Suspense } from "react";
 import "./App.css";
+
 const Hero = React.lazy(() => import("./components/hero/Hero"));
 const About = React.lazy(() => import("./components/about/About"));
 const Portfolio = React.lazy(() => import("./components/portfolio/Portfolio"));
@@ -21,8 +22,8 @@ function App() {
       <Hero />
       <About />
       <Skills />
-      <Portfolio />
       <Experience />
+      <Portfolio />
       <Contact />
     </Suspense>
   );
