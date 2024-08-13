@@ -15,16 +15,16 @@ const Portfolio = () => {
             key={index}
             className="max-w-sm border bg-white border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
           >
-            <img
+            {/* <img
               className="rounded-t-lg max-h-[200px] min-h-[200px] min-w-[100%]"
               src={item.image}
               alt=""
-            />
-            <div className="p-5">
-              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            /> */}
+            <div className="p-5 flex flex-col justify-between">
+              <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
                 {item.title}
               </h5>
-              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              <p className="mb-3 font-normal text-gray-500 dark:text-gray-400">
                 {item.description}
               </p>
               <div className="flex justify-between flex-col gap-2 md:flex-row">
