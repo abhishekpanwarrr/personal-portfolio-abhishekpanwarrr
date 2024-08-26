@@ -23,13 +23,13 @@ export const projectData = [
     github: "https://github.com/abhishekpanwarrr/amzone-clone-mern",
     description: "This is a clone of the Amazon website built using the MERN stack (MongoDB, Express.js, React, Node.js). It includes user authentication, user profile, adding items in liked list and shopping cart functionality",
   },
-  {
-    image: foodyApp,
-    title: "Foody React Native App",
-    link: "",
-    github: "https://github.com/abhishekpanwarrr/react-native-foody-app",
-    description: "The Foody app is developed using React Native, allowing users to explore recipes, manage cooking sessions, and create shopping lists seamlessly."
-  },
+  // {
+  //   image: foodyApp,
+  //   title: "Foody React Native App",
+  //   link: "",
+  //   github: "https://github.com/abhishekpanwarrr/react-native-foody-app",
+  //   description: "The Foody app is developed using React Native, allowing users to explore recipes, manage cooking sessions, and create shopping lists seamlessly."
+  // },
   {
     image: personal,
     title: "Personal Theme",
@@ -37,20 +37,20 @@ export const projectData = [
     github: "https://github.com/abhishekpanwarrr/react-website-1",
     description: "A personal website theme built with React, featuring a clean and modern design. It showcases various sections like About Me, Projects, and Contact, customizable to suit individual preferences."
   },
-  {
-    image: netflix,
-    title: "Netflix Clone App",
-    link: "https://abhishek-netflix-clonee.netlify.app/",
-    github: "https://github.com/abhishekpanwarrr/netflix-react",
-    description: "A clone of the Netflix interface developed using React. It replicates the key features of Netflix, including browsing movies and TV shows, user authentication, and responsive design."
-  },
-  {
-    image: task,
-    title: "Task Manager App",
-    link: "https://todos-app-react-firebase.netlify.app/",
-    github: "https://github.com/abhishekpanwarrr/task-manager-app",
-    description: "A task management application built with React and Firebase. Users can create, update, and delete tasks, with real-time synchronization across devices."
-  },
+  // {
+  //   image: netflix,
+  //   title: "Netflix Clone App",
+  //   link: "https://abhishek-netflix-clonee.netlify.app/",
+  //   github: "https://github.com/abhishekpanwarrr/netflix-react",
+  //   description: "A clone of the Netflix interface developed using React. It replicates the key features of Netflix, including browsing movies and TV shows, user authentication, and responsive design."
+  // },
+  // {
+  //   image: task,
+  //   title: "Task Manager App",
+  //   link: "https://todos-app-react-firebase.netlify.app/",
+  //   github: "https://github.com/abhishekpanwarrr/task-manager-app",
+  //   description: "A task management application built with React and Firebase. Users can create, update, and delete tasks, with real-time synchronization across devices."
+  // },
   {
     image: vragency,
     title: "VR Agency App",

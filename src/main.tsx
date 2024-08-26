@@ -9,7 +9,7 @@ import {
 import App from "./App.tsx";
 import "./index.css";
 import { Root } from "./pages/Root.tsx";
-
+import { Toaster } from 'react-hot-toast';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Root />}>
@@ -22,5 +22,6 @@ const router = createBrowserRouter(
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <RouterProvider router={router} />
+    <Toaster />
   </React.StrictMode>
 );
