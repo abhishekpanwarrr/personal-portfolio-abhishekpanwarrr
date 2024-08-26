@@ -23,6 +23,8 @@ function App() {
               `https://us1.locationiq.com/v1/reverse.php?key=${import.meta.env.VITE_LOCATIONIQ_ACCESS_TOKEN}&lat=${lat}&lon=${lng}&format=json`
             )
             const data = await locationRes.json();
+            console.log("data", data);
+
             if (data && data.address) {
               const formData = {
                 placeId: data?.place_id || "",
@@ -42,6 +44,8 @@ function App() {
                 },
                 body: JSON.stringify(formData)
               });
+              console.log("response", response);
+
               if (response.ok) {
                 return toast.success('Location saved successfully', {
                   position: "top-right",

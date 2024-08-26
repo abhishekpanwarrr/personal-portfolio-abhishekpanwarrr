@@ -11,10 +11,18 @@ const app = express();
 app.use(express.json());
 app.use(bodyParser.json({ limit: "30mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
+// app.use(
+//   cors({
+//     origin: "https://abhihsek.pro",
+//     credentials: true,
+//   })
+// );
 app.use(
   cors({
-    origin: "https://abhihsek.pro",
-    credentials: true,
+    origin: "https://abhihsek.pro", // Allow your production frontend
+    methods: ["GET", "POST", "PUT", "DELETE"], // Specify allowed HTTP methods
+    allowedHeaders: ["Content-Type", "Authorization"], // Specify allowed headers
+    credentials: true, // Allow credentials (e.g., cookies, authentication)
   })
 );
 
