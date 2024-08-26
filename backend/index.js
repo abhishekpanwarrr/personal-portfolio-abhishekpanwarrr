@@ -20,6 +20,9 @@ app.use(
 
 app.options("*", cors());
 // ROUTES
+app.use("/", (req, res) => {
+  res.send("Hello from server");
+});
 app.use("/api/v1/user", userRoutes);
 
 // MONGOOSE SETUP
