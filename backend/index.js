@@ -13,11 +13,12 @@ app.use(bodyParser.json({ limit: "30mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use(
   cors({
-    origin: "*",
+    origin: "https://abhihsek.pro",
     credentials: true,
   })
 );
 
+app.options("*", cors());
 // ROUTES
 app.use("/api/v1/user", userRoutes);
 
