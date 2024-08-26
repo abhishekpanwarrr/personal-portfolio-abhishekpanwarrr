@@ -1,10 +1,10 @@
 import personal from "@/assets/react.avif";
-import netflix from "@/assets/netflix.avif";
-import task from "@/assets/task.avif";
+// import netflix from "@/assets/netflix.avif";
+// import task from "@/assets/task.avif";
 import vragency from "@/assets/vragency.avif";
 import filterMovie from "@/assets/movie-filter-apps.netlify.app.avif";
 import kanban from "@/assets/kanban.avif"
-import foodyApp from "@/assets/foodyApp.avif"
+// import foodyApp from "@/assets/foodyApp.avif"
 import amazonClone from "@/assets/amazonClone.avif"
 import hotel from "@/assets/hotel.avif";
 
