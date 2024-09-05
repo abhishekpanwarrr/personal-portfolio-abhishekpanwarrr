@@ -5,6 +5,15 @@ import { Separator } from "@/components/ui/separator";
 import { Link } from "react-router-dom";
 
 const Hero = () => {
+
+  function downloadResume() {
+    const link = document.createElement("a")
+    link.href = "/abhishek_cv.pdf"
+    link.setAttribute("download", "abhishek_cv.pdf")
+    document.body.appendChild(link)
+    link.click()
+    link.remove()
+  }
   return (
     <div className="flex w-full flex-col gap-3 lg:flex-row">
       <div className="flex-3 flex flex-col gap-5 pt-20">
@@ -18,8 +27,8 @@ const Hero = () => {
         <Button
           variant="outline"
           className="max-w-max border-[#FEC86A] text-[#FEC86A]"
-        >
-          <a href="#contact">Contact Me</a>
+          onClick={downloadResume}
+        >Resume
         </Button>
         <div className="mt-10 flex items-center gap-3">
           <Separator className="w-20 bg-[#FEC86A]" />

@@ -25,3 +25,6 @@ dist-ssr
 *.sw?
 .vscode
 .DS_Store
+.yarnrc.yaml
+.DS_Store
+yarn.lock
